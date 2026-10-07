@@ -1,0 +1,21 @@
+# Secrets: API keys live here. Never commit this.
+.env
+
+# Your leads, owners, emails and reports. Private. Never commit these.
+data/
+
+# Python and tool files
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Computer clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Your own Claude settings
+.claude/settings.local.json

@@ -1,0 +1,36 @@
+# Your settings. Change them by asking Claude, or edit this file yourself.
+# Lines that start with # are notes. The program ignores them.
+
+[me]
+# Used in the emails you send. Real estate law in California says your
+# first contact with a seller must show your DRE license number.
+name = ""
+brokerage = ""
+dre_number = ""
+phone = ""
+# Commercial emails must include a real postal address (CAN-SPAM law).
+office_address = ""
+
+[area]
+# Orange County cities to search. Add or remove cities as you like.
+cities = ["San Clemente", "Dana Point", "San Juan Capistrano"]
+# Home types to include: "Single Family", "Condo", "Townhouse", "Multi-Family"
+property_types = ["Single Family"]
+# Only pull homes the owner bought at least this many years ago (0 = all).
+# Saves your monthly data requests for the most likely sellers.
+min_years_owned = 10
+
+[scoring]
+# Points a home gets for each sign that the owner might sell.
+# Higher total = higher on your list. Change the numbers to change the order.
+absentee_owner = 25        # owner gets mail at a different address
+out_of_state_owner = 15    # ...and that address is outside California
+owned_10_years = 15        # bought 10 to 19 years ago
+owned_20_years = 25        # bought 20 or more years ago (replaces the 10-year points)
+high_equity = 20           # worth at least 2x what they paid
+trust_owner = 5            # owned by a trust
+owns_several_homes = 10    # same owner has 3 or more homes on your list
+
+[emails]
+# How many email drafts to write at one time. Start small.
+batch_size = 5

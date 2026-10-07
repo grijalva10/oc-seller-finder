@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv run:*)",
+      "Bash(uv sync:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git show:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git push origin main)",
+      "Bash(git pull:*)",
+      "Bash(git restore:*)",
+      "Bash(git revert:*)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Bash(cat .env:*)",
+      "Bash(git push --force:*)",
+      "Bash(git push -f:*)",
+      "Bash(git push --force-with-lease:*)",
+      "Bash(git reset --hard:*)",
+      "Bash(git rebase:*)",
+      "Bash(git clean:*)",
+      "Bash(git worktree:*)",
+      "Bash(git checkout -- .:*)",
+      "Bash(git add -f:*)",
+      "Bash(git add --force:*)",
+      "Bash(rm -rf:*)",
+      "mcp__claude_ai_Gmail__send_message",
+      "mcp__claude_ai_Gmail__reply",
+      "mcp__claude_ai_Gmail__forward",
+      "mcp__claude_ai_Gmail__trash_message",
+      "mcp__claude_ai_Gmail__trash_thread"
+    ]
+  }
+}

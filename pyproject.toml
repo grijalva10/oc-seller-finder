@@ -1,0 +1,14 @@
+[project]
+name = "oc-seller-finder"
+version = "1.0.0"
+description = "Find off-market home sellers in Orange County, CA, and write them personal emails"
+requires-python = ">=3.11"
+# No outside packages on purpose: fewer things to install, fewer things to break.
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
